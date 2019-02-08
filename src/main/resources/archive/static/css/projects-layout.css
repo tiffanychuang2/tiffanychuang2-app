@@ -1,0 +1,128 @@
+
+footer {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: right;
+    width: 90vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 90vw;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.menu:first-child {
+    padding-left: 1rem;
+}
+
+.menu:last-child {
+    padding-right: 1rem;
+}
+
+.project-skills {
+    height: 32px;
+    width: 32px;
+}
+
+.projects {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project:first-child {
+    margin: 2rem;
+}
+
+.project:last-child {
+    margin: 2rem;
+}
+
+.return-home {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.screenshots {
+    height: 28vh;
+    width: 28vw;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+}
+
+#home,
+#last-return {
+    display: flex;
+    justify-content: center;
+}
+
+/* iPad Pro and smaller */
+
+@media (min-width: 1024px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+/* iPad and smaller */
+
+@media (min-width: 768px) {
+    ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+/* iPhone 6+ and smaller */
+
+@media (min-width: 414px) {
+    ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

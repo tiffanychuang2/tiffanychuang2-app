@@ -1,0 +1,87 @@
+body {
+    background-attachment: fixed;
+    background-image: url("../images/grass-pattern.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* mask */
+.name-on-hover {
+  background-color: transparent;
+  color: black;
+  font: sans-serif;
+  font-size: 1rem;
+  /*padding: 16px 32px;*/
+  text-align: center;
+}
+
+.p-title {
+  align-items: center;
+  background-image: url("../images/polaroid-one.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 247px;
+  min-width: 204px;
+  position: relative;
+}
+
+.polaroid-image {
+    backface-visibility: hidden;
+    display: block;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.polaroids .mask {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* need to check h3 */
+.polaroids h3 {
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.one-polaroid:hover .polaroid-image {
+  opacity: 0.3;
+}
+
+.one-polaroid:hover .mask {
+  opacity: 1;
+}
+
+
+
+/* Media Queries*/
+/* iPad Pro and smaller */
+
+@media (min-width: 1024px) {
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+
+}
+
+
+/* iPad and smaller */
+
+@media (min-width: 768px) {
+
+}
+
+
+/* iPhone 6+ and smaller */
+
+@media (min-width: 414px) {
+
+}

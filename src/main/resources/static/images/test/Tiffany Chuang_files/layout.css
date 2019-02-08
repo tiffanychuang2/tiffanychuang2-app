@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+a.home-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-top: .5rem; */
+}
+
+footer {
+    /* padding: 1rem; */
+    text-align: right;
+    /* width: 90vw; */
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul.links {
+  list-style-type: none;
+}
+
+.links {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.polaroid-image {
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  width: 85vw;
+}
+
+.polaroids{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+}
+
+/* iPad Pro and smaller */
+
+@media (min-width: 1024px) {
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+
+}
+
+
+/* iPad and smaller */
+
+@media (min-width: 768px) {
+
+}
+
+
+/* iPhone 6+ and smaller */
+
+@media (min-width: 414px) {
+
+}

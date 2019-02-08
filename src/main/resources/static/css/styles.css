@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Covered+By+Your+Grace|Dancing+Script:400,700|Permanent+Marker|Petit+Formal+Script|Rochester|Shadows+Into+Light');
+
+*{
+  font-family: 'Dancing Script', cursive;
+}
+
+a.p-title:active,
+a.p-title:hover,
+a.p-title:link,
+a.p-title:visited{
+  color: black;
+  text-decoration: none;
+}
+
+/* a.p-title:hover{
+  color: red;
+  text-decoration: none;
+} */
+
+body {
+  background-attachment: fixed;
+  /* background-image: url("../images/grass-pattern.jpg"); */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+				url("../images/grass-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Petit Formal Script', cursive;
+  font-size: 32px; */
+  font-size: 52px !important;
+  text-shadow: 3px 3px 5px white;
+}
+
+h3,
+#copyright {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+}
+
+/* mask */
+
+.name-on-hover {
+  background-color: transparent;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 32px;
+  height: 333.06px;
+  /*padding: 16px 32px;*/
+  text-align: center;
+  width: 292.5px;
+}
+
+.p-title {
+  align-items: center;
+  background-image: url("../images/polaroid-large.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  min-height: 295px;
+  min-width: 245px;
+  position: relative;
+  width: 100%;
+}
+
+.polaroid-image {
+    backface-visibility: hidden;
+    display: block;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.polaroids .mask {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* need to check h3 */
+.polaroids h3 {
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.one-polaroid:hover .polaroid-image {
+  opacity: 0.3;
+}
+
+.one-polaroid:hover .mask {
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+
+#about-title,
+#experience-title,
+#resume-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 46px;
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Petit Formal Script', cursive;
+  font-size: 32px; */
+  text-shadow: 2px 2px 2px grey;
+}
+
+a#home:active,
+a#home:link,
+a#home:visited {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+a#home:hover {
+  color: grey;
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+a#home {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#p1{
+
+}
+
+#p2{
+
+}
+
+#p3{
+  background-image: url("../images/polaroid-large-download.png") !important;
+  background-size: contain;
+}
+
+/* #p3:hover{
+  filter: alpha(opacity=50); /* for IE8 and earlier */
+  opacity: 0.5;
+} */
+
+
+/* Media Queries*/
+/* iPad Pro and smaller */
+
+@media (max-width: 1024px) {
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+
+}
+
+
+/* iPad and smaller */
+
+@media (max-width: 768px) {
+
+}
+
+
+/* iPhone 6+ and smaller */
+
+@media (max-width: 414px) {
+
+}

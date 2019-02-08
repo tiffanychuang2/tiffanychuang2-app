@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Tiffany Chuang</title>
+    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+
+<div class="container">
+    <header id="header">
+      <h1>Let's work together.</h1>
+    </header>
+
+    <section class="content">
+        <div class="postcard">
+            <div class="left-side">
+                <form method="POST">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="fname">First Name</label>
+                        <br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="lname">Last Name</label>
+                        <br>
+                        <select id="dropdown" name="dropdown">
+                            <option value="option1">option1</option>
+                            <option value="option2">option2</option>
+                            <option value="option3">option3</option>
+                        </select>
+                    <label for="dropdown">Dropdown</label>
+                        <br>
+                    <!-- <label for="subject">Subject</label> -->
+                    <textarea id="subject" name="subject" placeholder="Comments" style="height:170px"></textarea>
+                        <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="right-side">
+                <p>Connect with me:</p>
+                <ul class="links">
+                        <li class="list-item"> 
+                            <a class="social" href="mailto:tiffany.chuang2@gmail.com" target="_blank"><img class="social-media" src="./static/images/mailicon.png" alt="Email Me" /></a>
+                            <a class="social" href="mailto:tiffany.chuang2@gmail.com" target="_blank">tiffany.chuang2@gmail.com</a>
+                        </li>
+                        <li class="list-item"> 
+                            <a class="social" href="http://www.github.com/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/github.png" alt="GitHub" /></a>
+                            <a class="social" href="http://www.github.com/tiffanychuang2" target="_blank">github.com/tiffanychuang2</a>
+                        </li>
+                        <li class="list-item"> 
+                            <a class="social" href="http://www.linkedin.com/in/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/linkedinicon.png" alt="LinkedIn" /></a>
+                            <a class="social" href="http://www.linkedin.com/in/tiffanychuang2" target="_blank">linkedin.com/in/tiffanychuang2/</a>
+                        </li>
+                    </ul>
+            </div>
+
+
+        </div>
+  				
+    </section>
+
+    <section class="navigation">
+        <p><a id="home" href="./index.html">Home</a></p>     
+        <a id="to-top" href="#header"><img src="./static/images/arrow_up.png" alt="Back to the top" height="40" width="40"></a>
+        <!-- <p id="to-top"><a href="#header">Back to the top </a></p> -->
+    </section>
+
+<!-- <body> -->
+
+        <footer id="contact-me">
+            <h3>Contact me</h3>
+            <ul class="links">
+                <li>
+                    <a href="mailto:tiffany.chuang2@gmail.com" target="_blank"><img class="social-media" src="./static/images/mailicon.png" alt="Email Me" /></a>
+                </li>
+                <li>
+                    <a href="http://www.github.com/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/github.png" alt="GitHub" /></a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/in/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/linkedinicon.png" alt="LinkedIn" /></a>
+                </li>
+            </ul>
+            <small id="copyright">Handmade by Me &copy; 2017</small>
+        </footer>
+</div>
+    <!-- .container -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

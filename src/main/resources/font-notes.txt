@@ -1,0 +1,45 @@
+fonts
+
+//serif
+Embed Font
+To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+
+STANDARD
+<link href="https://fonts.googleapis.com/css?family=Copse|Crimson+Text:400,400i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700|Prata|Roboto+Slab:100,300,400,700|Trocchi" rel="stylesheet">
+
+@IMPORT
+<style>
+@import url('https://fonts.googleapis.com/css?family=Copse|Crimson+Text:400,400i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700|Prata|Roboto+Slab:100,300,400,700|Trocchi');
+</style>
+
+Specify in CSS
+Use the following CSS rules to specify these families:
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Prata', serif;
+font-family: 'Copse', serif;
+font-family: 'Trocchi', serif;
+
+
+//handwriting
+Embed Font
+To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+
+STANDARD
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Meddon|Rochester|Rouge+Script&amp;subset=latin-ext" rel="stylesheet">
+
+@IMPORT
+<style>
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Meddon|Rochester|Rouge+Script&subset=latin-ext');
+</style>
+
+Specify in CSS
+Use the following CSS rules to specify these families:
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Rochester', cursive;
+font-family: 'Meddon', cursive;
+font-family: 'Rouge Script', cursive;
