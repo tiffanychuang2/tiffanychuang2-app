@@ -1,0 +1,22 @@
+2018.06.21 - made a copy of original portfolio created at wcci bootcamp and created app.js for v2.
+
+Ideas:
+- Header bar
+- Plain background, squares of tinted images
+- Parallax Scrolling within
+- Must be responsive
+- hover text (like grocery app)
+- responsive square?
+- hover mask + label
+- fix hover text
+
+- geography
+- education
+- career
+- hobbies - music, volleyball, dogs
+- passion
+- technology
+- projects - scrolling project screenshots
+- resume
+- goals
+*social media/contact me

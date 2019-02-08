@@ -40,11 +40,11 @@ public class Tiffanychuang2Controller {
 
 	}
 	
-//	@RequestMapping("/about")
-//	public String getAboutPage(@RequestParam Long id, Model model) {
-//		model.addAttribute("about", aboutRepo.findOne(id));
-//		return "about";
-//	}
+	@RequestMapping("/about")
+	public String getAboutPage(@RequestParam Long id, Model model) {
+		model.addAttribute("about", aboutRepo.findById(id));
+		return "about";
+	}
 
 }
 

@@ -15,10 +15,14 @@ public class Page {
 	private String pageName;
 	private String pageIcon;
 	
-//	constructor
+//	constructors
 	public Page(String pageName, String pageIcon) {
 		this.pageName = pageName;
 		this.pageIcon = pageIcon;
+	}
+	
+	protected Page () {
+		
 	}
 	
 //	getters
