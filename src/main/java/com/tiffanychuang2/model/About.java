@@ -16,6 +16,7 @@ public class About {
 	@Id
 	@GeneratedValue
 	private Long id;
+	
 	private String aboutTitle;
 	
 	@Lob
@@ -24,14 +25,15 @@ public class About {
 	@OneToMany(mappedBy = "about")
 	private Set<Image> images;
 	
-	protected About() {
-	}
-	
 	//constructors
 	public About(String aboutTitle, String aboutPar, Image... images) {
 		this.aboutTitle = aboutTitle;
 		this.aboutPar = aboutPar;
 		this.images = new HashSet<>(Arrays.asList(images));
+	}
+	
+	protected About () {
+		
 	}
 	
 	//getters
@@ -66,6 +68,11 @@ public class About {
 	
 	public void setImages(Set<Image> images) {
 		this.images = images;
+	}
+	
+	@Override
+	public String toString() {
+		return aboutTitle + " " + aboutPar + images;
 	}
 }
 

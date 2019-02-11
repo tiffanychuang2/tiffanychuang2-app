@@ -63,5 +63,10 @@ public class Image {
 	public void setAbout(About about) {
 		this.about = about;
 	}
+	
+	@Override
+	public String toString() {
+		return name + " " + imageUrl + " " + about;
+	}
 
 }
