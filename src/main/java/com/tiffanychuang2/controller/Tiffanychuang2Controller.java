@@ -12,6 +12,8 @@ import com.tiffanychuang2.repository.ContactRepository;
 import com.tiffanychuang2.repository.ExperienceRepository;
 import com.tiffanychuang2.repository.PageRepository;
 
+
+
 @Controller
 public class Tiffanychuang2Controller {
 
@@ -45,7 +47,14 @@ public class Tiffanychuang2Controller {
 		model.addAttribute("about", aboutRepo.findAll());
 		return "about";
 	}
-
+	
+	@RequestMapping("/oneAbout")
+	public String getOneAbout(@RequestParam Long id, Model model) {
+		model.addAttribute("about", aboutRepo.findById(id));
+		return "about";
+	}
+	
+	
 }
 
 
