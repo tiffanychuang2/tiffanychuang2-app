@@ -4,6 +4,7 @@
 
 <head>
     <title>Tiffany Chuang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./css/layout.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -11,19 +12,29 @@
 
 <body>
 
-<div class="container">
+<div>
+    
+    <h2 th:text="${about.aboutTitle}"></h2>
+
+    <div th:each="oneAbout: ${about.aboutTitle}">
+        <p th:text="${oneAbout.aboutPar}"></p>
+    </div>
+
+</div>
+
+<!-- <div class="container">
     <header id="header">
-      <h1>What have I done.</h1>
+      <h1 th:text="${oneAbout.name}"></h1>
     </header>
 
     <section class="content">
 
     </section>
 
-    <a id="to-top" href="#header"><img src="./static/images/arrow_up.png" alt="Back to the top" height="40" width="40"></a>
+    <a id="to-top" href="#header"><img src="./images/arrow_up.png" alt="Back to the top" height="40" width="40"></a> -->
             <!-- <p id="to-top"><a href="#header">Back to the top </a></p> -->
 
-            <p><a id="home" href="./index.html">Home</a></p>
+            <!-- <p><a id="home" href="./index.html">Home</a></p> -->
 
 <!-- <body> -->
 

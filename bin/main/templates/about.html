@@ -12,16 +12,18 @@
 
 <body>
 
-<div>
-    <header>
-        <h1>About</h1>
-    </header>
-
-    <section>
-        <p>text goes here</p>
-    </section>
-
-</div>
+			<div th:each="about: ${allAbout}">
+				<h2>
+                    <a th:href="@{/about(id=${about.id})}" th:text="${about.aboutTitle}"></a>
+                </h2>
+	
+                <!-- <ul>    
+                    <li th:each="about: ${allAbout}">
+                    <a th:href="@{/about(id=${about.id})}" th:text="${about.aboutTitle}"></a>
+                    </li>
+                </ul> -->
+				
+			</div>
 
 <!-- <div class="container">
     <header id="header">
@@ -43,13 +45,13 @@
             <h3>Contact me</h3>
             <ul class="links">
                 <li>
-                    <a href="mailto:tiffany.chuang2@gmail.com" target="_blank"><img class="social-media" src="./static/images/mailicon.png" alt="Email Me" /></a>
+                    <a href="mailto:tiffany.chuang2@gmail.com" target="_blank"><img class="social-media" src="./images/mailicon.png" alt="Email Me" /></a>
                 </li>
                 <li>
-                    <a href="http://www.github.com/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/github.png" alt="GitHub" /></a>
+                    <a href="http://www.github.com/tiffanychuang2" target="_blank"><img class="social-media" src="./images/github.png" alt="GitHub" /></a>
                 </li>
                 <li>
-                    <a href="http://www.linkedin.com/in/tiffanychuang2" target="_blank"><img class="social-media" src="./static/images/linkedinicon.png" alt="LinkedIn" /></a>
+                    <a href="http://www.linkedin.com/in/tiffanychuang2" target="_blank"><img class="social-media" src="./images/linkedinicon.png" alt="LinkedIn" /></a>
                 </li>
             </ul>
             <small id="copyright">Handmade by Me &copy; 2017</small>
