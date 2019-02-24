@@ -8,10 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 @Entity
-public class About {
+public class OneAbout {
 
 	@Id
 	@GeneratedValue
@@ -21,17 +21,17 @@ public class About {
 	@Lob
 	private String aboutPar;
 	
-	@OneToMany(mappedBy = "about")
-	private Set<Image> images;
+	@ManyToMany
+	private Set<Image> imageTags;
 	
-	protected About() {
+	protected OneAbout() {
 	}
 	
 	//constructors
-	public About(String aboutTitle, String aboutPar, Image... images) {
+	public OneAbout(String aboutTitle, String aboutPar, Image... imageTags) {
 		this.aboutTitle = aboutTitle;
 		this.aboutPar = aboutPar;
-		this.images = new HashSet<>(Arrays.asList(images));
+		this.imageTags = new HashSet<Image>(Arrays.asList(imageTags));
 	}
 	
 	//getters
@@ -47,8 +47,8 @@ public class About {
 		return aboutPar;
 	}
 	
-	public Set<Image> getImages() {
-		return images;
+	public Set<Image> getImageTags() {
+		return imageTags;
 	}
 	
 	//setters
@@ -64,7 +64,7 @@ public class About {
 		this.aboutPar = aboutPar;
 	}
 	
-	public void setImages(Set<Image> images) {
-		this.images = images;
+	public void setImageTags(Set<Image> imageTags) {
+		this.imageTags = imageTags;
 	}
 }

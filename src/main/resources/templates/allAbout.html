@@ -12,18 +12,22 @@
 
 <body>
 
-			<div th:each="about: ${allAbout}">
+			<div th:each="oneAbout: ${allAbout}">
 				<h2>
-                    <a th:href="@{/about(id=${about.id})}" th:text="${about.aboutTitle}"></a>
-                </h2>
-	
-                <!-- <ul>    
-                    <li th:each="about: ${allAbout}">
-                    <a th:href="@{/about(id=${about.id})}" th:text="${about.aboutTitle}"></a>
-                    </li>
-                </ul> -->
-				
-			</div>
+                    <a th:href="@{/oneAbout(id=${oneAbout.id})}" th:text="${oneAbout.aboutTitle}"></a>
+                </h2>	
+            </div>
+
+            <!-- <div>
+				<div th:each="i: ${allAbout}">
+                    <a th:href="@{/oneAbout(id=${i.id})}"> 
+                        <!-- <img th:src="${i.imageUrl}" /> 
+						<div>
+							<div th:text="${i.aboutTitle}"></div>
+						</div>
+					</a>
+				</div>
+			</div> -->
 
 <!-- <div class="container">
     <header id="header">
