@@ -12,49 +12,44 @@ import com.tiffanychuang2.repository.ContactRepository;
 import com.tiffanychuang2.repository.ExperienceRepository;
 import com.tiffanychuang2.repository.PageRepository;
 
-
-
 @Controller
 public class Tiffanychuang2Controller {
 
 	@Resource
 	AboutRepository aboutRepo;
-	
+
 	@Resource
 	ContactRepository contactRepo;
-	
+
 	@Resource
 	ExperienceRepository experienceRepo;
-	
+
 	@Resource
 	PageRepository pageRepo;
-	
+
 	@RequestMapping("/")
-	public String getAllPagesIndex (Model model) {
+	public String getAllPagesIndex(Model model) {
 		model.addAttribute("home", pageRepo.findAll());
 		return "index";
 	}
 
 	@RequestMapping("/home")
-	public String getAllPages (Model model) {
+	public String getAllPages(Model model) {
 		model.addAttribute("home", pageRepo.findAll());
 		return "index";
 
 	}
-	
+
 	@RequestMapping("/allAbout")
 	public String getAboutPage(Model model) {
-		model.addAttribute("about", aboutRepo.findAll());
+		model.addAttribute("allAbout", aboutRepo.findAll());
 		return "allAbout";
 	}
-	
+
 	@RequestMapping("/oneAbout")
 	public String getOneAbout(@RequestParam Long id, Model model) {
 		model.addAttribute("oneAbout", aboutRepo.findById(id));
 		return "oneAbout";
 	}
-	
-	
+
 }
-
-
