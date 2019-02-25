@@ -27,17 +27,10 @@ public class Tiffanychuang2Controller {
 	@Resource
 	PageRepository pageRepo;
 
-	@RequestMapping("/")
+	@RequestMapping({ "/", "/home" })
 	public String getAllPagesIndex(Model model) {
 		model.addAttribute("home", pageRepo.findAll());
 		return "index";
-	}
-
-	@RequestMapping("/home")
-	public String getAllPages(Model model) {
-		model.addAttribute("home", pageRepo.findAll());
-		return "index";
-
 	}
 
 	@RequestMapping("/allAbout")
