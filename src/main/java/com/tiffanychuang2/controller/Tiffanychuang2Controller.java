@@ -44,7 +44,7 @@ public class Tiffanychuang2Controller {
 	
 	@RequestMapping("/allAbout")
 	public String getAboutPage(Model model) {
-		model.addAttribute("about", aboutRepo.findAll());
+		model.addAttribute("allAbout", aboutRepo.findAll());
 		return "allAbout";
 	}
 	
