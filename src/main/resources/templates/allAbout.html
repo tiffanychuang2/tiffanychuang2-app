@@ -13,11 +13,7 @@
 <body>
 
     <div th:each="i: ${allAbout}">
-        <a th:href="@{/oneAbout(id=${i.id})}">
-            <div>
-                <div th:text="${i.aboutTitle}"></div>
-            </div>
-        </a>
+        <a th:href="@{/oneAbout(id=${i.id})}" th:text="${i.aboutTitle}"></a>
     </div>
 
     <footer id="contact-me">
